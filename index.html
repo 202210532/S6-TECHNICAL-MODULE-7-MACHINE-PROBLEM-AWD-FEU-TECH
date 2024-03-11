@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Login</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button id="signupTab" class="tab active" onclick="showForm('signupForm')">Sign Up</button>
+            <button id="loginTab" class="tab" onclick="showForm('loginForm')">Login</button>
+        </div>
+
+        <form id="signupForm" class="form">
+            <h2>Sign Up</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <label for="signupUsername">Enter Email or Username:</label>
+            <input type="text" id="signupUsername" required>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+
+        <form id="loginForm" class="form" style="display:none;">
+            <h2>Login</h2>
+            <label for="loginUsername">Enter Email or Username:</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script src="./Assets/JS/script.js"></script>
+</body>
+</html>
